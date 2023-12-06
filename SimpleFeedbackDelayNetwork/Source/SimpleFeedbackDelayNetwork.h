@@ -252,7 +252,7 @@ public:
              
             }
 
-        // HERE I PUT THE 8 OUTPUTS IN THE 2 CHANNELS OUTPUTS
+        // HERE I PUT THE 8 OUTPUTS IN THE 2 CHANNELS OUTPUT
         for (int channel = 0; channel < 8; ++channel) {
             int originalChannel = channel % 2;
             const float* bufferData = reverbBuffer.getReadPointer(channel);
