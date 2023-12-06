@@ -1,4 +1,4 @@
-# How-to-create-a-Feedback-Delay-Network-in-JUCE
+# HOW TO CREATE A FEEDBACK DELAY NETWORK IN JUCE!
 How to create a feedback delay network in juce! The project is essentialy the audio player from Juce, I only added the part the code for the reverb. The algorithm is very simple and doesn't have parameters and a good GUI for now!
 
 ## VISUAL REPRESENTATION OF THE FEEDBACK DELAY NETWORK
