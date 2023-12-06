@@ -113,6 +113,7 @@ public:
 
         transportSource.getNextAudioBlock(bufferToFill);
 
+        // HERE I SPLIT THE INPUT      
         for (int channel = 0; channel < 8; ++channel) {
             int originalChannel = channel % 2;
             const float* bufferData = bufferToFill.buffer->getReadPointer(originalChannel);
@@ -132,14 +133,17 @@ public:
             for (int sample = 0; sample < reverbBuffer.getNumSamples(); sample++) {
                 
                 
-
+                //OUTPUT OF DELAY AND LOWPASS
                 float one1 = delay1.popSample();
                 float* onep = &one1;
-
                 lowPassFilters[0].processSamples(onep, 1);
+                //OUTPUT OF ALLPASS
                 float temp11 = allpass1.popSample();
+                //INPUT FOR THE ALLPASS
                 float input1 = one1 * 0.2 + channelData1[sample] - 0.6 * temp11;
+                // ALL THE INPUT SHOULD BE MULTIPLIED BY DECAY
                 float feedforward_allpass1 = input1 * 0.6;
+                //PUSH THE INPUT IN ALLPASS(WITHOUT THE DECAY OF FEEDFORWARD)
                 allpass1.pushSample(input1);
 
                 float two1 = delay2.popSample();
@@ -198,7 +202,9 @@ public:
                 float input8 = eigth1 * 0.2 + 0.6 * temp88 + channelData8[sample];
                 float feedforward_allpass8 = -(input8 * 0.6);
                 allpass8.pushSample(input8);
-                  
+
+
+                //HERE I PREPARE AN ARRAY TO BE PROCESSED IN THE HADAMARD MATRIX THAT I HAVE SEEN IN FAUST
                 array12[0] = temp11 + feedforward_allpass1;
                 array12[1] = temp22 + feedforward_allpass2; 
                 array12[2] = temp33 + feedforward_allpass3; 
@@ -219,7 +225,7 @@ public:
                 float eigth = array12[7];
                 
                 
-
+                // HERE I SET THE 8 OUTPUTS
                 channelData1[sample] = one;
                 channelData2[sample] = two;
                 channelData3[sample] = three;
@@ -229,7 +235,7 @@ public:
                 channelData7[sample] = seven;
                 channelData8[sample] = eigth;
 
-             
+                // I LOAD THE OUTPUTS IN THE DELAYS
                 delay1.pushSample(one);
                 delay2.pushSample(two) ;
                 delay3.pushSample(three) ;
@@ -246,6 +252,7 @@ public:
              
             }
 
+        // HERE I PUT THE 8 OUTPUTS IN THE 2 CHANNELS OUTPUTS
         for (int channel = 0; channel < 8; ++channel) {
             int originalChannel = channel % 2;
             const float* bufferData = reverbBuffer.getReadPointer(channel);
