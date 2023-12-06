@@ -1,7 +1,7 @@
 
 import("stdfaust.lib");
 
-zita_rev_fdn(fsmax) = (si.bus(2*N) :> allpass_combs(N) : feedbackmatrix(N)) ~ (delays(N) : lowpasses(N))
+simple_fdn(fsmax) = (si.bus(2*N) :> allpass_combs(N) : feedbackmatrix(N)) ~ (delays(N) : lowpasses(N))
 with {
   N = 8;
  
@@ -27,4 +27,4 @@ with {
 
 
 
-process = zita_rev_fdn(44100.0);
+process = simple_fdn(44100.0);
