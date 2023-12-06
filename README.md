@@ -27,11 +27,11 @@ How to create a feedback delay network in juce! The project is essentialy the au
 #### I decided to divide my workflow into 5 steps
 
 ![FAUST IDE](https://github.com/K4liLinux007/How-to-create-a-Feedback-Delay-Network-in-JUCE/assets/125820469/813a4271-c577-44de-8a20-f4bd634c9076)
-#### 1) Split input to go from 2 inputs to 8 inputs
-#### 2) Set te allpasses, that will have as input the delayed sounds of the allpasses, the input and the delayed sound of delays that go first in lowpass filters
-#### 3) The output of the allpasses, which is the sum of the feedforward path and the delayed sound used in the first step, are used as inputs for the matrix
-#### 4) The output of the matrix will be push in the delays and also will be used as outputs
-#### 5) The output will be condensed in 2 outputs.
+#### 1) Split input from 2 inputs to 8 inputs
+#### 2) Set the allpasses, that will have as input: the delayed sounds of the allpasses, the input and the delayed sounds of delays that however will be first processed in the lowpass filters
+#### 3) The outputs of the allpasses, which is the sum of the feedforward paths and the delayed sound of allpasses used in the first step, are used as inputs for the matrix
+#### 4) The outputs of the matrix will be push in the delays and also will be used as outputs
+#### 5) The outputs will be condensed in 2 outputs.
 
 
 
