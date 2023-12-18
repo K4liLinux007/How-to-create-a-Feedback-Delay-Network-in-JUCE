@@ -49,52 +49,89 @@ public:
         
         
 
-        allpass1.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass2.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass3.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass4.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass5.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass6.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass7.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        allpass8.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass1L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass2L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass3L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass4L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass5L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass6L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass7L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass8L.prepareToPlay(samplesPerBlockExpected, sampleRate);
         
 
-        delay1.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay2.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay3.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay4.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay5.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay6.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay7.prepareToPlay(samplesPerBlockExpected, sampleRate);
-        delay8.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay1L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay2L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay3L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay4L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay5L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay6L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay7L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay8L.prepareToPlay(samplesPerBlockExpected, sampleRate);
+
+        allpass1R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass2R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass3R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass4R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass5R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass6R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass7R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        allpass8R.prepareToPlay(samplesPerBlockExpected, sampleRate);
 
 
-        allpass1.setDelayTimeSamples(44100 * 0.020346);
-        allpass2.setDelayTimeSamples(44100 * 0.024421);
-        allpass3.setDelayTimeSamples(44100 * 0.031604);
-        allpass4.setDelayTimeSamples(44100 * 0.027333);
-        allpass5.setDelayTimeSamples(44100 * 0.022904);
-        allpass6.setDelayTimeSamples(44100 * 0.029291);
-        allpass7.setDelayTimeSamples(44100 * 0.013458);
-        allpass8.setDelayTimeSamples(44100 * 0.019123);
+        delay1R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay2R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay3R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay4R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay5R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay6R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay7R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+        delay8R.prepareToPlay(samplesPerBlockExpected, sampleRate);
+
+
+        allpass1L.setDelayTimeSamples(44100 * 0.020346);
+        allpass2L.setDelayTimeSamples(44100 * 0.024421);
+        allpass3L.setDelayTimeSamples(44100 * 0.031604);
+        allpass4L.setDelayTimeSamples(44100 * 0.027333);
+        allpass5L.setDelayTimeSamples(44100 * 0.022904);
+        allpass6L.setDelayTimeSamples(44100 * 0.029291);
+        allpass7L.setDelayTimeSamples(44100 * 0.013458);
+        allpass8L.setDelayTimeSamples(44100 * 0.019123);
         
  
-        delay1.setDelayTimeSamples(44100 * 0.153129);
-        delay2.setDelayTimeSamples(44100 * 0.210389);
-        delay3.setDelayTimeSamples(44100 * 0.127837);
-        delay4.setDelayTimeSamples(44100 * 0.256891);
-        delay5.setDelayTimeSamples(44100 * 0.174713);
-        delay6.setDelayTimeSamples(44100 * 0.192303);
-        delay7.setDelayTimeSamples(44100 * 0.125000);
-        delay8.setDelayTimeSamples(44100 * 0.219991);
+        delay1L.setDelayTimeSamples(44100 * 0.153129);
+        delay2L.setDelayTimeSamples(44100 * 0.210389);
+        delay3L.setDelayTimeSamples(44100 * 0.127837);
+        delay4L.setDelayTimeSamples(44100 * 0.256891);
+        delay5L.setDelayTimeSamples(44100 * 0.174713);
+        delay6L.setDelayTimeSamples(44100 * 0.192303);
+        delay7L.setDelayTimeSamples(44100 * 0.125000);
+        delay8L.setDelayTimeSamples(44100 * 0.219991);
 
+        allpass1R.setDelayTimeSamples(44100 * 0.020346);
+        allpass2R.setDelayTimeSamples(44100 * 0.024421);
+        allpass3R.setDelayTimeSamples(44100 * 0.031604);
+        allpass4R.setDelayTimeSamples(44100 * 0.027333);
+        allpass5R.setDelayTimeSamples(44100 * 0.022904);
+        allpass6R.setDelayTimeSamples(44100 * 0.029291);
+        allpass7R.setDelayTimeSamples(44100 * 0.013458);
+        allpass8R.setDelayTimeSamples(44100 * 0.019123);
+
+
+        delay1R.setDelayTimeSamples(44100 * 0.153129);
+        delay2R.setDelayTimeSamples(44100 * 0.210389);
+        delay3R.setDelayTimeSamples(44100 * 0.127837);
+        delay4R.setDelayTimeSamples(44100 * 0.256891);
+        delay5R.setDelayTimeSamples(44100 * 0.174713);
+        delay6R.setDelayTimeSamples(44100 * 0.192303);
+        delay7R.setDelayTimeSamples(44100 * 0.125000);
+        delay8R.setDelayTimeSamples(44100 * 0.219991);
         
    
         
-        reverbBuffer.setSize(8, samplesPerBlockExpected);
+        reverbBuffer.setSize(16, samplesPerBlockExpected);
    
-        for (int channel = 0; channel < 8; ++channel) {
-            lowPassFilters[channel].setCoefficients(juce::IIRCoefficients::makeLowPass(sampleRate, 4000 ));
+        for (int channel = 0; channel < 16; ++channel) {
+            lowPassFilters[channel].setCoefficients(juce::IIRCoefficients::makeLowPass(sampleRate, 3000 ));
         }
         
     }
@@ -114,146 +151,258 @@ public:
         transportSource.getNextAudioBlock(bufferToFill);
 
         // HERE I SPLIT THE INPUT      
-        for (int channel = 0; channel < 8; ++channel) {
+        for (int channel = 0; channel < 16; ++channel) {
             int originalChannel = channel % 2;
             const float* bufferData = bufferToFill.buffer->getReadPointer(originalChannel);
             reverbBuffer.copyFrom(channel, 0, bufferData, bufferLength);
 
         }
 
-        auto channelData1 = reverbBuffer.getWritePointer(0);
-        auto channelData2 = reverbBuffer.getWritePointer(1);
-        auto channelData3 = reverbBuffer.getWritePointer(2);
-        auto channelData4 = reverbBuffer.getWritePointer(3);
-        auto channelData5 = reverbBuffer.getWritePointer(4);
-        auto channelData6 = reverbBuffer.getWritePointer(5);
-        auto channelData7 = reverbBuffer.getWritePointer(6);
-        auto channelData8 = reverbBuffer.getWritePointer(7);
+        auto channelData1L = reverbBuffer.getWritePointer(0);
+        auto channelData1R = reverbBuffer.getWritePointer(1);
+        auto channelData2L = reverbBuffer.getWritePointer(2);
+        auto channelData2R = reverbBuffer.getWritePointer(3);
+        auto channelData3L = reverbBuffer.getWritePointer(4);
+        auto channelData3R = reverbBuffer.getWritePointer(5);
+        auto channelData4L = reverbBuffer.getWritePointer(6);
+        auto channelData4R = reverbBuffer.getWritePointer(7);
+        auto channelData5L = reverbBuffer.getWritePointer(8);
+        auto channelData5R = reverbBuffer.getWritePointer(9);
+        auto channelData6L = reverbBuffer.getWritePointer(10);
+        auto channelData6R = reverbBuffer.getWritePointer(11);
+        auto channelData7L = reverbBuffer.getWritePointer(12);
+        auto channelData7R = reverbBuffer.getWritePointer(13);
+        auto channelData8L = reverbBuffer.getWritePointer(14);
+        auto channelData8R = reverbBuffer.getWritePointer(15);
 
             for (int sample = 0; sample < reverbBuffer.getNumSamples(); sample++) {
                 
                 
                 //OUTPUT OF DELAY AND LOWPASS
-                float one1 = delay1.popSample();
-                float* onep = &one1;
-                lowPassFilters[0].processSamples(onep, 1);
+                float one1L = delay1L.popSample();
+                float* onepL = &one1L;
+                lowPassFilters[0].processSamples(onepL, 1);
                 //OUTPUT OF ALLPASS
-                float temp11 = allpass1.popSample();
+                float temp11L = allpass1L.popSample();
                 //INPUT FOR THE ALLPASS
-                float input1 = one1 * 0.2 + channelData1[sample] - 0.6 * temp11;
+                float input1L = one1L * 0.2 + channelData1L[sample] - 0.6 * temp11L;
                 // ALL THE INPUT SHOULD BE MULTIPLIED BY DECAY
-                float feedforward_allpass1 = input1 * 0.6;
+                float feedforward_allpass1L = input1L * 0.6;
                 //PUSH THE INPUT IN ALLPASS(WITHOUT THE DECAY OF FEEDFORWARD)
-                allpass1.pushSample(input1);
+                allpass1L.pushSample(input1L);
 
-                float two1 = delay2.popSample();
-                float* twop = &two1;
-                lowPassFilters[1].processSamples(twop, 1);
-                float temp22 = allpass2.popSample();
-                float input2 = two1 * 0.2  + channelData2[sample] + 0.6 * temp22;
-                float feedforward_allpass2 = -(input2 * 0.6);
-                allpass2.pushSample(input2);
+                
+                float one1D = delay1R.popSample();
+                float* onepD = &one1D;
+                lowPassFilters[1].processSamples(onepD, 1);
+                float temp11D = allpass1R.popSample();
+                float input1D = one1D * 0.2 + channelData1R[sample] - 0.6 * temp11D;
+                float feedforward_allpass1D = input1D * 0.6;
+                allpass1R.pushSample(input1D);
+
+                float two1S = delay2L.popSample();
+                float* twopS = &two1S;
+                lowPassFilters[1].processSamples(twopS, 1);
+                float temp22S = allpass2L.popSample();
+                float input2S = two1S * 0.2  + channelData2L[sample] + 0.6 * temp22S;
+                float feedforward_allpass2S = -(input2S * 0.6);
+                allpass2L.pushSample(input2S);
+
+                float two1D = delay2R.popSample();
+                float* twopD = &two1D;
+                lowPassFilters[1].processSamples(twopD, 1);
+                float temp22D = allpass2R.popSample();
+                float input2D = two1D * 0.2 + channelData2R[sample] + 0.6 * temp22D;
+                float feedforward_allpass2D = -(input2D * 0.6);
+                allpass2R.pushSample(input2D);
  
 
-                float three1 = delay3.popSample();
-                float* threep = &three1;
-                lowPassFilters[2].processSamples(threep, 1);
-                float temp33 = allpass3.popSample();
-                float input3 = three1 * 0.2 + channelData3[sample] - 0.6 * temp33;
-                float feedforward_allpass3 = input3 * 0.6;
-                allpass3.pushSample(input3);
+                float three1S = delay3L.popSample();
+                float* threepS = &three1S;
+                lowPassFilters[2].processSamples(threepS, 1);
+                float temp33S = allpass3L.popSample();
+                float input3S = three1S * 0.2 + channelData3L[sample] - 0.6 * temp33S;
+                float feedforward_allpass3S = input3S * 0.6;
+                allpass3L.pushSample(input3S);
 
-                float four1 = delay4.popSample();
-                float* fourp = &four1;
-                lowPassFilters[3].processSamples(fourp, 1);
-                float temp44 = allpass4.popSample();
-                float input4 = four1 * 0.2  + channelData4[sample] + 0.6 * temp44;
-                float feedforward_allpass4 = -(input4 * 0.6);
-                allpass4.pushSample(input4);
+                float three1D = delay3R.popSample();
+                float* threepD = &three1D;
+                lowPassFilters[2].processSamples(threepD, 1);
+                float temp33D = allpass3R.popSample();
+                float input3D = three1D * 0.2 + channelData3R[sample] - 0.6 * temp33D;
+                float feedforward_allpass3D = input3D * 0.6;
+                allpass3R.pushSample(input3D);
+
+                float four1S = delay4L.popSample();
+                float* fourpS = &four1S;
+                lowPassFilters[3].processSamples(fourpS, 1);
+                float temp44S = allpass4L.popSample();
+                float input4S = four1S * 0.2  + channelData4L[sample] + 0.6 * temp44S;
+                float feedforward_allpass4S = -(input4S * 0.6);
+                allpass4L.pushSample(input4S);
+
+                float four1D = delay4R.popSample();
+                float* fourpD = &four1D;
+                lowPassFilters[3].processSamples(fourpD, 1);
+                float temp44D = allpass4R.popSample();
+                float input4D = four1D * 0.2 + channelData4R[sample] + 0.6 * temp44D;
+                float feedforward_allpass4D = -(input4D * 0.6);
+                allpass4R.pushSample(input4D);
  
-                float five1 = delay5.popSample();
-                float* fivep = &five1;
-                lowPassFilters[4].processSamples(fivep, 1);
-                float temp55 = allpass5.popSample();
-                float input5 = five1 * 0.2 - 0.6 * temp55 + channelData5[sample];
-                float feedforward_allpass5 = input5 * 0.6;
-                allpass5.pushSample(input5);
+                float five1S = delay5L.popSample();
+                float* fivepS = &five1S;
+                lowPassFilters[4].processSamples(fivepS, 1);
+                float temp55S = allpass5L.popSample();
+                float input5S = five1S * 0.2 - 0.6 * temp55S + channelData5L[sample];
+                float feedforward_allpass5S = input5S * 0.6;
+                allpass5L.pushSample(input5S);
+
+                float five1D = delay5R.popSample();
+                float* fivepD = &five1D;
+                lowPassFilters[4].processSamples(fivepD, 1);
+                float temp55D = allpass5R.popSample();
+                float input5D = five1D * 0.2 - 0.6 * temp55D + channelData5R[sample];
+                float feedforward_allpass5D = input5D * 0.6;
+                allpass5R.pushSample(input5D);
               
-                float six1 = delay6.popSample();
-                float* sixp = &six1;
-                lowPassFilters[5].processSamples(sixp, 1);
-                float temp66 = allpass6.popSample();
-                float input6 = six1 * 0.2 + 0.6 * temp66 + channelData6[sample];
-                float feedforward_allpass6 = -(input6 * 0.6);
-                allpass6.pushSample(input6);
+                float six1S = delay6L.popSample();
+                float* sixpS = &six1S;
+                lowPassFilters[5].processSamples(sixpS, 1);
+                float temp66S = allpass6L.popSample();
+                float input6S = six1S * 0.2 + 0.6 * temp66S + channelData6L[sample];
+                float feedforward_allpass6S = -(input6S * 0.6);
+                allpass6L.pushSample(input6S);
 
-                float seven1 = delay7.popSample();
-                float* sevenp = &seven1;
-                lowPassFilters[6].processSamples(sevenp, 1);
-                float temp77 = allpass7.popSample();
-                float input7 = seven1 * 0.2 - 0.6 * temp77 + channelData7[sample];
-                float feedforward_allpass7 = input7 * 0.6;
-                allpass7.pushSample(input7);
+                float six1D = delay6R.popSample();
+                float* sixpD = &six1D;
+                lowPassFilters[5].processSamples(sixpD, 1);
+                float temp66D = allpass6R.popSample();
+                float input6D = six1D * 0.2 + 0.6 * temp66D + channelData6R[sample];
+                float feedforward_allpass6D = -(input6D * 0.6);
+                allpass6R.pushSample(input6D);
 
-                float eigth1 = delay8.popSample();
-                float* eigthp = &eigth1;
-                lowPassFilters[7].processSamples(eigthp, 1);
-                float temp88 = allpass8.popSample();
-                float input8 = eigth1 * 0.2 + 0.6 * temp88 + channelData8[sample];
-                float feedforward_allpass8 = -(input8 * 0.6);
-                allpass8.pushSample(input8);
+                float seven1S = delay7L.popSample();
+                float* sevenpS = &seven1S;
+                lowPassFilters[6].processSamples(sevenpS, 1);
+                float temp77S = allpass7L.popSample();
+                float input7S = seven1S * 0.2 - 0.6 * temp77S + channelData7L[sample];
+                float feedforward_allpass7S = input7S * 0.6;
+                allpass7L.pushSample(input7S);
+
+                float seven1D = delay7R.popSample();
+                float* sevenpD = &seven1D;
+                lowPassFilters[6].processSamples(sevenpD, 1);
+                float temp77D = allpass7R.popSample();
+                float input7D = seven1D * 0.2 - 0.6 * temp77D + channelData7R[sample];
+                float feedforward_allpass7D = input7D * 0.6;
+                allpass7R.pushSample(input7D);
+
+                float eigth1S = delay8L.popSample();
+                float* eigthpS = &eigth1S;
+                lowPassFilters[7].processSamples(eigthpS, 1);
+                float temp88S = allpass8L.popSample();
+                float input8S = eigth1S * 0.2 + 0.6 * temp88S + channelData8L[sample];
+                float feedforward_allpass8S = -(input8S * 0.6);
+                allpass8L.pushSample(input8S);
+
+                float eigth1D = delay8R.popSample();
+                float* eigthpD = &eigth1D;
+                lowPassFilters[7].processSamples(eigthpD, 1);
+                float temp88D = allpass8R.popSample();
+                float input8D = eigth1D * 0.2 + 0.6 * temp88D + channelData8R[sample];
+                float feedforward_allpass8D = -(input8D * 0.6);
+                allpass8R.pushSample(input8D);
 
 
                 //HERE I PREPARE AN ARRAY TO BE PROCESSED IN THE HADAMARD MATRIX THAT I HAVE SEEN IN FAUST
-                array12[0] = temp11 + feedforward_allpass1;
-                array12[1] = temp22 + feedforward_allpass2; 
-                array12[2] = temp33 + feedforward_allpass3; 
-                array12[3] = temp44 + feedforward_allpass4;
-                array12[4] = temp55 + feedforward_allpass5;
-                array12[5] = temp66 + feedforward_allpass6;
-                array12[6] = temp77 + feedforward_allpass7;
-                array12[7] = temp88 + feedforward_allpass8;
-                hadamard(array12);
+                arrayS[0] = temp11L + feedforward_allpass1L;
+                arrayD[0] = temp11D + feedforward_allpass1D;
+                arrayS[1] = temp22S + feedforward_allpass2S; 
+                arrayD[1] = temp22D + feedforward_allpass2D;
+                arrayS[2] = temp33S + feedforward_allpass3S; 
+                arrayD[2] = temp33D + feedforward_allpass3D;
+                arrayS[3] = temp44S + feedforward_allpass4S;
+                arrayD[3] = temp44D + feedforward_allpass4D;
+                arrayS[4] = temp55S + feedforward_allpass5S;
+                arrayD[4] = temp55D + feedforward_allpass5D;
+                arrayS[5] = temp66S + feedforward_allpass6S;
+                arrayD[5] = temp66D + feedforward_allpass6D;
+                arrayS[6] = temp77S + feedforward_allpass7S;
+                arrayD[6] = temp77D + feedforward_allpass7D;
+                arrayS[7] = temp88S + feedforward_allpass8S;
+                arrayD[7] = temp88D + feedforward_allpass8D;
                 
-                float one = array12[0];
-                float two = array12[1];
-                float three = array12[2];
-                float four = array12[3];
-                float five = array12[4];
-                float six = array12[5];
-                float seven = array12[6];
-                float eigth = array12[7];
+                hadamard(arrayS);
+                hadamard(arrayD);
+                
+                float oneS = arrayS[0];
+                float oneD = arrayD[0];
+                float twoS = arrayS[1];
+                float twoD = arrayD[1];
+                float threeS = arrayS[2];
+                float threeD = arrayD[2];
+                float fourS = arrayS[3];
+                float fourD = arrayD[3];
+                float fiveS = arrayS[4];
+                float fiveD = arrayD[4];
+                float sixS = arrayS[5];
+                float sixD = arrayD[5];
+                float sevenS = arrayS[6];
+                float sevenD = arrayD[6];
+                float eigthS = arrayS[7];
+                float eigthD = arrayD[7];
+
+                
+                
+              
+                
+              
+                
+               
                 
                 
                 // HERE I SET THE 8 OUTPUTS
-                channelData1[sample] = one;
-                channelData2[sample] = two;
-                channelData3[sample] = three;
-                channelData4[sample] = four;
-                channelData5[sample] = five;
-                channelData6[sample] = six;
-                channelData7[sample] = seven;
-                channelData8[sample] = eigth;
+                channelData1L[sample] = oneS;
+                channelData1R[sample] = oneD;
+                channelData2L[sample] = twoS;
+                channelData2R[sample] = twoD;
+                channelData3L[sample] = threeS;
+                channelData3R[sample] = threeD;
+                channelData4L[sample] = fourS;
+                channelData4R[sample] = fourD;
+                channelData5L[sample] = fiveS;
+                channelData5R[sample] = fiveD;
+                channelData6L[sample] = sixS;
+                channelData6R[sample] = sixD;
+                channelData7L[sample] = sevenS;
+                channelData7R[sample] = sevenD;
+                channelData8L[sample] = eigthS;
+                channelData8R[sample] = eigthD;
+              
 
                 // I LOAD THE OUTPUTS IN THE DELAYS
-                delay1.pushSample(one);
-                delay2.pushSample(two) ;
-                delay3.pushSample(three) ;
-                delay4.pushSample(four) ;
-                delay5.pushSample(five) ;
-                delay6.pushSample(six) ;
-                delay7.pushSample(seven) ;
-                delay8.pushSample(eigth) ;
+                delay1L.pushSample(oneS);
+                delay1R.pushSample(oneD);
+                delay2L.pushSample(twoS) ;
+                delay2R.pushSample(twoD);
+                delay3L.pushSample(threeS) ;
+                delay3R.pushSample(threeD);
+                delay4L.pushSample(fourS) ;
+                delay4R.pushSample(fourD);
+                delay5L.pushSample(fiveS) ;
+                delay5R.pushSample(fiveD);
+                delay6L.pushSample(sixS) ;
+                delay6R.pushSample(sixD);
+                delay7L.pushSample(sevenS) ;
+                delay7R.pushSample(sevenD);
+                delay8L.pushSample(eigthS) ;
+                delay8R.pushSample(eigthD);
 
-               
 
-
-              
-             
             }
 
         // HERE I PUT THE 8 OUTPUTS IN THE 2 CHANNELS OUTPUT
-        for (int channel = 0; channel < 8; ++channel) {
+        for (int channel = 0; channel < 16; ++channel) {
             int originalChannel = channel % 2;
             const float* bufferData = reverbBuffer.getReadPointer(channel);
             bufferToFill.buffer->copyFromWithRamp(originalChannel, 0, bufferData, bufferLength, 0.4, 0.4);
@@ -440,27 +589,47 @@ private:
 
    
 
-    float array12[8];
-    juce::IIRFilter lowPassFilters[8];
+    float arrayS[8];
+    float arrayD[8];
+    juce::IIRFilter lowPassFilters[16];
 
-    SDSP::DelayLine delay1;
-    SDSP::DelayLine delay2;
-    SDSP::DelayLine delay3;
-    SDSP::DelayLine delay4;
-    SDSP::DelayLine delay5;
-    SDSP::DelayLine delay6;
-    SDSP::DelayLine delay7;
-    SDSP::DelayLine delay8;
+    SDSP::DelayLine delay1L;
+    SDSP::DelayLine delay2L;
+    SDSP::DelayLine delay3L;
+    SDSP::DelayLine delay4L;
+    SDSP::DelayLine delay5L;
+    SDSP::DelayLine delay6L;
+    SDSP::DelayLine delay7L;
+    SDSP::DelayLine delay8L;
 
 
-    SDSP::APF allpass1;
-    SDSP::APF allpass2;
-    SDSP::APF allpass3;
-    SDSP::APF allpass4;
-    SDSP::APF allpass5;
-    SDSP::APF allpass6;
-    SDSP::APF allpass7;
-    SDSP::APF allpass8;
+    SDSP::APF allpass1L;
+    SDSP::APF allpass2L;
+    SDSP::APF allpass3L;
+    SDSP::APF allpass4L;
+    SDSP::APF allpass5L;
+    SDSP::APF allpass6L;
+    SDSP::APF allpass7L;
+    SDSP::APF allpass8L;
+
+    SDSP::DelayLine delay1R;
+    SDSP::DelayLine delay2R;
+    SDSP::DelayLine delay3R;
+    SDSP::DelayLine delay4R;
+    SDSP::DelayLine delay5R;
+    SDSP::DelayLine delay6R;
+    SDSP::DelayLine delay7R;
+    SDSP::DelayLine delay8R;
+
+
+    SDSP::APF allpass1R;
+    SDSP::APF allpass2R;
+    SDSP::APF allpass3R;
+    SDSP::APF allpass4R;
+    SDSP::APF allpass5R;
+    SDSP::APF allpass6R;
+    SDSP::APF allpass7R;
+    SDSP::APF allpass8R;
 
     
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainContentComponent)
